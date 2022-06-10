@@ -8,7 +8,7 @@ for f in "folderName1" "folderName2" ; do
 
     python3 merge.py -samples cuteSV SVIM \
     -vcf /path/to/polish/$sampleName.hg38.minimap.{cutesv,svim}.min3.polish.vcf.gz \
-    -d 20 \
+    -d 20 --consider-sequence \
     -o /path/to/data/$sampleName.merged.ins.min3.vcf
 
 done

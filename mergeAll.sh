@@ -6,7 +6,7 @@ python3 ~/datos-javier/ins/merge.py -samples \
     sample1 sample2 \
     -vcf /path/to/sample1.merged.ins.min3.vcf.gz /path/to/sample1.merged.ins.min3.vcf.gz \
     -o /path/to/all.merged.ins.85.min3.vcf \
-    -d 60
+    -d 60 --consider-sequence
 
 conda deactivate
 
