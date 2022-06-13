@@ -18,7 +18,7 @@ source $1
 
 #! Set ONT enviroment 
 source $conda_path
-conda activate "envLra"
+conda activate "env2"
 
 #! Define variables
 threads=63
