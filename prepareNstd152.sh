@@ -30,7 +30,7 @@ cat \
 bgzip -f nstd152.ins.sorted.vcf > nstd152.ins.vcf.gz
 tabix -p vcf --csi nstd152.ins.vcf.gz
 
-python3 merge.py \
-    -samples US HGSVC \
-    -vcf all.me.vcf.gz nstd152.ins.vcf.gz -o us.vs.hgsvc.vcf \
-    -d 60
+# python3 merge.py \
+#     -samples US HGSVC \
+#     -vcf all.me.vcf.gz nstd152.ins.vcf.gz -o us.vs.hgsvc.vcf \
+#     -d 60
