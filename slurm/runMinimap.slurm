@@ -1,20 +1,15 @@
 #!/bin/bash
 
 #SBATCH -J MINIMAP2
-#SBATCH -A <<YOUR INFO>>
-#SBATCH --nodes=3
-#SBATCH --ntasks=48
+#SBATCH -A <<YOUR ACCOUNT>>
+#SBATCH --nodes=1
+#SBATCH --ntasks=16
 #SBATCH --time=36:00:00
 #SBATCH --mail-type=FAIL
 #SBATCH --exclusive
 #SBATCH -p <<YOUR INFO>>
 
-#! Number of nodes and tasks per node allocated by SLURM (do not change):
-numnodes=$SLURM_JOB_NUM_NODES
-numtasks=$SLURM_NTASKS
-mpi_tasks_per_node=$(echo "$SLURM_TASKS_PER_NODE" | sed -e  's/^\([0-9][0-9]*\).*$/\1/')
-
-#! Modify the environment seen by the application. For this example we need the default modules.
+#! Set up your modules, if any
 . /etc/profile.d/modules.sh                # This line enables the module command
 module purge                               # Removes all modules still loaded
 
@@ -23,8 +18,7 @@ source $1
 
 #! Set ONT enviroment
 source $conda_path
-ont_env=$env_path
-conda activate $ont_env
+conda activate "env1"
 
 #! Define variables
 threads=16

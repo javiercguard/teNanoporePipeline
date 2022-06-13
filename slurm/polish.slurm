@@ -2,13 +2,13 @@
 #!
 
 #SBATCH -J POLISH
-#SBATCH -A <<REPLACE>>
+#SBATCH -A <<YOUR ACCOUNT>>
 #SBATCH --nodes=1
 #SBATCH --ntasks=16
 #SBATCH --time=36:00:00
 #SBATCH --mail-type=FAIL
 #SBATCH --exclusive
-#SBATCH -p <<REPLACE>>
+#SBATCH -p <<YOUR CLUSTER>>
 
 #! Number of nodes and tasks per node allocated by SLURM (do not change):
 numnodes=$SLURM_JOB_NUM_NODES

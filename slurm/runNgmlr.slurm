@@ -18,8 +18,7 @@ source $1
 
 #! Set ONT enviroment 
 source $conda_path
-ont_env=$env_path
-conda activate $ont_env
+conda activate "env1"
 
 #! Define variables
 threads=16
