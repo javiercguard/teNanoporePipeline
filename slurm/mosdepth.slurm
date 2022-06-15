@@ -27,11 +27,12 @@ shift
 
 #! Set ONT enviroment
 source $conda_path
-mosdepth_env="/path/to/.conda/envs/mosdepth"
+mosdepth_env="env2"
 conda activate ${mosdepth_env}
 
 #! Define variables
 aligner="minimap"
+mode=$1 # either INS or DEL
 
 if [ $build = "GRCh37" ]; then
  buildInfix="hg19"
@@ -54,11 +55,13 @@ mkdir -p ${outputDir}
 
 echo "Running mosdepth"
 
+if [[ mode == "DEL" ]] ; then
     mosdepth -t 4 -Q 20 -n -b "/path/to/retro/teDeletions.bed" \
     ${outputDir}/${sample_name}.${aligner}.del ${bamFile}
-
+elif [[ mode == "INS" ]] ; then 
     mosdepth -t 4 -Q 20 -n -b "/path/to/retro/insertions.bed" \
     ${outputDir}/${sample_name}.${aligner}.ins ${bamFile}
+fi
 
 echo "Finished mosdepth"
 
