@@ -1,6 +1,6 @@
 source /path/to/conda.sh
 
-conda activate pysam
+conda activate env3
 
 python3 ~/datos-javier/ins/merge.py -samples \
     sample1 sample2 \
@@ -10,7 +10,7 @@ python3 ~/datos-javier/ins/merge.py -samples \
 
 conda deactivate
 
-conda activate repeatmasker 
+conda activate env4 
 
 python3 checkInsertionsMultiSample.py /path/to/all.merged.ins.85.min3.vcf .
 
