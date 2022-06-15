@@ -1,0 +1,36 @@
+name: env1
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - _openmp_mutex=5.1=1_gnu
+  - bcftools=1.9=h68d8f2e_9
+  - bzip2=1.0.8=h7b6447c_0
+  - ca-certificates=2022.4.26=h06a4308_0
+  - curl=7.69.1=hbc83047_0
+  - gsl=2.5=h294904e_1
+  - htslib=1.9=h4da6232_3
+  - krb5=1.17.1=h173b8e3_0
+  - libblas=3.9.0=15_linux64_openblas
+  - libcblas=3.9.0=15_linux64_openblas
+  - libcurl=7.69.1=h20c2e04_0
+  - libdeflate=1.8=h7f8727e_5
+  - libedit=3.1.20181209=hc058e9b_0
+  - libgcc-ng=11.2.0=h1234567_1
+  - libgfortran-ng=11.2.0=h00389a5_1
+  - libgfortran5=11.2.0=h1234567_1
+  - libgomp=11.2.0=h1234567_1
+  - libopenblas=0.3.20=h043d6bf_1
+  - libssh2=1.10.0=h8f2d780_0
+  - libstdcxx-ng=11.2.0=h1234567_1
+  - minimap2=2.17=h84994c4_0
+  - ncurses=6.1=he6710b0_1
+  - ngmlr=0.2.7=he941832_0
+  - openssl=1.1.1o=h7f8727e_0
+  - perl=5.26.2=h14c3975_0
+  - samtools=1.9=h10a08f8_12
+  - tk=8.6.12=h1ccaba5_0
+  - xz=5.2.5=h7f8727e_1
+  - zlib=1.2.12=h7f8727e_2
