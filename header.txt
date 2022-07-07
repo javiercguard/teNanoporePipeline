@@ -199,7 +199,8 @@
 ##INFO=<ID=SVTYPE,Number=1,Type=String,Description="Type of SV">
 ##INFO=<ID=END,Number=1,Type=Integer,Description="End position of the structural variant">
 ##INFO=<ID=SVLEN,Number=1,Type=Integer,Description="Length of the SV">
-##INFO=<ID=SUPP_trusty,Number=1,Type=Integer,Description="Present in X samples (stringent criteria)">
+##INFO=<ID=SUPP_strict,Number=1,Type=Integer,Description="Present in X samples (stringent criteria)">
+##INFO=<ID=SUPP_lax,Number=1,Type=Integer,Description="Present in X samples (lax criteria)">
 ##INFO=<ID=SUPP_geno,Number=1,Type=Integer,Description="Present in X samples (according to genotyping)">
 ##INFO=<ID=MAF,Number=1,Type=Float,Description="Altered frequence">
 ##ALT=<ID=INS,Description="Insertion">
