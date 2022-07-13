@@ -345,8 +345,8 @@ data.table::setnames(geneOverlapRepeat, "symbol", "annot.symbol")
 goiRepeatPercent = genes[geneOverlapRepeat, on = "annot.symbol"][!is.na(uniques)][order(-uniques)]
 gnoiRepeatPercent = genes[geneOverlapRepeat, on = "annot.symbol"][is.na(uniques)][order(-uniques)]
 
-t = t.test(goiRepeatPercent$repeatPercent, gnoiRepeatPercent$repeatPercent)
-t2 = t.test(goiRepeatPercent[uniques == 1]$repeatPercent, goiRepeatPercent[uniques > 1]$repeatPercent)
+t = wilcox.test(goiRepeatPercent$repeatPercent, gnoiRepeatPercent$repeatPercent)
+t2 = wilcox.test(goiRepeatPercent[uniques == 1]$repeatPercent, goiRepeatPercent[uniques > 1]$repeatPercent)
 # ----
 
 # This is also used latter, liberally
