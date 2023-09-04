@@ -1,12 +1,14 @@
 # Introduction
 
-This is a repository meant to accompany the manuscript [TBA]. It contains the scripts that were used to simulate the results, as well as information on the conda environments needed.
+This is a repository meant to accompany the manuscript [TBA]. It contains the scripts that were used to simulate the results, the information on the conda environments needed, as well as the insertion dataset mentioned in the article.
+
+The dataset is [here](all.me.vcf).
 
 To use them, it would be necessary to edit every script and replace the placeholders for paths, which are in the format `/path/to`, and the names for folders, which are `folderName`.
 
 Below, a brief description of each script is provided to make this repository meaningful.
 
-Bash scrips require bash (version `4.2.46(2)-release (x86_64-redhat-linux-gnu)` was used). Python scripts require python >=3.7, and R scripts were executed on R 3.6.
+Bash scrips require bash (version `4.2.46(2)-release (x86_64-redhat-linux-gnu)` was used). Python scripts require python >=3.7, and R scripts were executed on R 4.
 
 Some of the hevy-load programs were called trhough SLURM. The SLURM scripts include the parameters that were used to call programs that were called that way. For non-SLURM scripts, parameters are included in bash scripts.
 
